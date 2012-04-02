@@ -1,0 +1,21 @@
+{
+	"The URL you want to shorten": "The URL you want to shorten",
+	"Type or paste your URL here...": "Type or paste your URL here...",
+	"Triggify": "Triggify",
+	"What is triggy?": "What is triggy?",
+	"There are lots of things which may trigger traumatic memories. To help trauma survivors to avoid such triggers, you should always place trigger warnings in front of possibly troubling content. triggy helps you with that: You get a short link and everyone who follows it sees a trigger warning before reaching the links destination.": "There are lots of things which may trigger traumatic memories. To help trauma survivors to avoid such triggers, you should always place trigger warnings in front of possibly troubling content. triggy helps you with that: You get a short link and everyone who follows it sees a trigger warning before reaching the links destination.",
+	"Privacy": "Privacy",
+	"How you can help": "How you can help",
+	"Use triggy to apply trigger warnings": "Use triggy to apply trigger warnings",
+	"Educate and sensibilize others about triggers": "Educate and sensibilize others about triggers",
+	"Help us translate triggy into ALL the languages": "Help us translate triggy into ALL the languages",
+	"keep your filterbubble a safe space.": "keep your filterbubble a safe space.",
+	"triggy helps to keep your filterbubble a safe space": "triggy helps to keep your filterbubble a safe space",
+	"Flattr this": "Flattr this",
+	"Follow us at Twitter": "Follow us at Twitter",
+	"Triggy at Twitter": "Triggy at Twitter",
+	"Trigger Warning": "Trigger Warning",
+	"The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ": "The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ",
+	"Reveal the Link": "Reveal the Link",
+	"Continue": "Continue"
+}

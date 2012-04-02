@@ -1,0 +1,25 @@
+<div id="action-container">				
+   <section id="action">
+      <div class="triggerwarning">
+         <h2><%= __('Trigger Warning') %></h2>
+         <p>
+            <%= __('The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ') %>
+         </p>
+         <div id="triggy-reveal" class="hidden"><%= link %></div>
+         <a href="javascript:;" onclick="$('#triggy-reveal').fadeIn('slow');" class="button" /><%= __('Reveal the Link') %></a>
+         <a href="<%= link %>" class="button green" id="triggy-link" /><%= __('Continue') %></a>
+      </div>
+   </section>
+</div>
+<div id="content-container">
+   <section id="content">
+      <div class="col">
+         <%- partial('widget-explain') %>
+      </div>
+      <div class="col">
+         <%- partial('widget-privavy') %>
+         <%- partial('widget-help') %>
+      </div>
+      <div class="clear"></div>
+   </section>
+</div>
