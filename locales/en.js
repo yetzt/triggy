@@ -17,5 +17,8 @@
 	"Trigger Warning": "Trigger Warning",
 	"The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ": "The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ",
 	"Reveal the Link": "Reveal the Link",
-	"Continue": "Continue"
+	"Continue": "Continue",
+	"Triggy does not make logs or collect any data but the URLs you submit.": "Triggy does not make logs or collect any data but the URLs you submit.",
+	"This URL is invalid": "This URL is invalid",
+	"Your triggified link has been created:": "Your triggified link has been created:"
 }

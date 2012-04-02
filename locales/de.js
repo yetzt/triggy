@@ -21,5 +21,6 @@
 	"Your triggified link has been created:": "Dein Link wurde erzeugt:",
 	"Educate and sensibilize others about triggers": "Unterrichte und sensibilisiere andere über Trigger",
 	"Help us translate triggy into ALL the languages": "Hilft uns, triggy in ALLE Sprachen zu übersetzen",
-	"The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ": "Die Webseite die Du aufrufen möchtest kann möglicherweise traumatische Erinnerungen auslösen. Wenn das kein Problem für Dich ist, dann fahre fort."
+	"The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ": "Die Webseite die Du aufrufen möchtest kann möglicherweise traumatische Erinnerungen auslösen. Wenn das kein Problem für Dich ist, dann fahre fort.",
+	"Triggy does not make logs or collect any data but the URLs you submit.": "Triggy speichert keine Logdateien und sammelt keine Daten außer den URLs, die verkürzt werden."
 }
