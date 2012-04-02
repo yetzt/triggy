@@ -51,7 +51,7 @@ app.post('/api/create', function(req, res){
 		return this;
 	});
 	
-	req.assert('url', __("This URL is invalid")).isUrl();	
+	req.assert('url', __("This URL is invalid")).isUrl().regex(/^(http(s)?:\/\/)/);	
 	var url = encodeURI(decodeURI(req.body.url));
 	
 	if (errors.length > 0) {
@@ -78,7 +78,7 @@ app.post('/create', function(req, res){
 		return this;
 	});
 	
-	req.assert('url', __("This URL is invalid")).notEmpty().isUrl();
+	req.assert('url', __("This URL is invalid")).notEmpty().isUrl().regex(/^(http(s)?:\/\/)/);
 	
 	var url = encodeURI(decodeURI(req.body.url));
 	
