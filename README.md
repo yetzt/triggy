@@ -24,3 +24,7 @@ All Code is in the public domain.
 All Artwork is licensed under 
 
   <http://creativecommons.org/licenses/by-nc/3.0/de/>
+  
+Londrina Sketch is created by Marcelo Magalhães and licensed under
+
+  <http://scripts.sil.org/OFL>
