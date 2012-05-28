@@ -1,0 +1,26 @@
+{
+	"name": "triggy",
+	"description": "responsible link-shortening",
+	"author": "yetzt",
+	"version": "0.0.1",
+	"license": "code: public domain, artwork: cc-by-nc",
+	
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yetzt/triggy.git"
+	},
+	"dependencies": {
+		"express": "2.5.x",
+		"express-validator": "0.2.x",
+		"i18n": "0.3.x",
+		"ejs": "0.7.x",
+		"crypto": "0.0.x",
+		"redis": "0.7.x"
+	},
+	"scripts": {
+		"start": "node app.js"
+	},
+	"engine": {
+		"node": ">=0.6.x"
+	}	
+}
