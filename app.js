@@ -48,7 +48,7 @@ app.get(/^\/([\_A-Za-z0-9]{5})$/, function(req, res){
 		if (result === null) {
 			res.redirect('/', 301);
 		} else {
-			res.render('trigger', {link:result});			
+			res.render('trigger', result);
 		}
 	});
 });
@@ -61,17 +61,23 @@ app.post('/api/create', function(req, res){
 		errors.push(msg);
 		return this;
 	});
-	
-	req.assert('url', __("This URL is invalid")).isUrl().regex(/^(http(s)?:\/\/)/);	
+
+	req.check('url', __("This URL is invalid")).isUrl().regex(/^(http(s)?:\/\/)/);	
+	req.sanitize('action').xss();
+	req.sanitize('warning').xss();
+
 	var url = encodeURI(decodeURI(req.body.url));
+	var action = req.body.action;
+	var warning = req.body.warning;
 	
 	if (errors.length > 0) {
 	   res.json({
 			error: errors.shift()
 		});	
 	} else {		
-		triggy.create(url, function(data){
+		triggy.create(url, action, warning, function(data){
 			data.shorturl = prefix+data.link;
+			data.adress = __('Adress');
 			data.message = __('Your triggified link has been created:');
 		   res.json(data);				
 		});		
@@ -90,14 +96,19 @@ app.post('/create', function(req, res){
 		return this;
 	});
 	
-	req.assert('url', __("This URL is invalid")).notEmpty().isUrl().regex(/^(http(s)?:\/\/)/);
+	req.check('url', __("This URL is invalid")).notEmpty().isUrl().regex(/^(http(s)?:\/\/)/);
+	req.sanitize('action').xss();
+	req.sanitize('warning').xss();
+
 	
 	var url = encodeURI(decodeURI(req.body.url));
+	var action = req.body.action;
+	var warning = req.body.warning;
 	
 	if (errors.length > 0) {
 		res.render('create-error', errors);
 	} else {		
-		triggy.create(url, function(data){
+		triggy.create(url, action, warning, function(data){
 			data.shorturl = prefix+data.link;
 			res.render('create', data);
 		});		

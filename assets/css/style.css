@@ -26,7 +26,7 @@ body {
 	background: url(../images/triggy-background.png) bottom right no-repeat fixed, -moz-radial-gradient(center center 0deg, circle cover, #0077db, #006cc7, #0057a0);	
 		
 }
-	
+
 	#container {
 		
 		display: block;
@@ -61,13 +61,17 @@ body {
 			background: url(../images/triggy.png) top left no-repeat;
 			
 		}
+		
+		#head > a {
+			text-decoration: none;
+		}
 
 	#action-container {
 		
 		display: block;
 		position: relative;
 		width: 100%;
-		padding: 20px 0px 30px;
+		padding: 20px 0px 60px;
 		margin: 20px auto;
 		background-color: rgba(255,255,255,0.8);
 		box-shadow: 0px 0px 20px -10px #000;
@@ -90,8 +94,6 @@ body {
 			}
 		
 			#action label {
-				
-				display: block;
 				position: relative;
 				color: #555;
 				padding: 2px;
@@ -112,7 +114,7 @@ body {
 				
 				display: inline-block;
 				font-size: 24px;
-				width: 140px;
+				width: 145px;
 				margin-bottom: 0px;
 								
 			}
@@ -203,7 +205,16 @@ body {
 						color: #333;
 						
 					}					
-			
+	
+	#warning-text {
+		width: 300px;
+	}
+
+	.warning {
+		margin: 0 150px 20px 0;
+		float: right;
+	}
+		
 	#content-container {
 		
 		display: block;
@@ -309,8 +320,9 @@ body {
 		width: 740px;
 		margin: 0px auto;
 		height: 30px;
-		padding: 5px 20px;
+		padding: 10px 20px 0px 20px;
 		background-color: rgba(255,255,255,0.1);
+		line-height: 1em;
 		
 		-webkit-border-top-left-radius: 7px;
 		-webkit-border-top-right-radius: 7px;
@@ -352,6 +364,7 @@ body {
 				#footer-links ul li {
 				
 					display: block;
+					float: left;
 					position: relative;
 					margin: 0px;
 					padding: 0px;
@@ -635,13 +648,11 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     border: 1px solid #CCCCCC;
     border-radius: 2px 2px 2px 2px;
     color: #777777;
-    display: block;
     font: 13px "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin: 0 0 20px;
+    margin: 5px 0 20px;
     max-width: 100%;
     outline: medium none;
     padding: 6px 4px;
-    width: 210px;
 }
 
 select {
@@ -659,13 +670,12 @@ textarea {
 }
 
 label, legend {
-    display: block;
     font-size: 13px;
     font-weight: bold;
 }
 
 select {
-    width: 220px;
+	padding: 5px 4px;
 }
 
 input[type="checkbox"] {
