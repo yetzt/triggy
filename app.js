@@ -48,6 +48,12 @@ app.get(/^\/([\_A-Za-z0-9]{5})$/, function(req, res){
 		if (result === null) {
 			res.redirect('/', 301);
 		} else {
+			if (!result.action) {
+				result.action = null;
+			}
+			if (!result.warning) {
+				result.warning = null;
+			}
 			res.render('trigger', result);
 		}
 	});

@@ -6,10 +6,11 @@
             <%= __('The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ') %>
          </p>
 		<div id="triggy-reveal" class="hidden">
-			<% if(warning.length > 0) { %>
+			<% if(warning && warning.length > 0) { %>
 				<%= action %> <%= warning %>.
 			<br>
 			<% } %>
+			
 			<%= __('The adress is: %s', url) %>
 		</div>
          <a href="javascript:;" onclick="$('#triggy-reveal').fadeIn('slow');" class="button" /><%= __('Show specific information') %></a>
