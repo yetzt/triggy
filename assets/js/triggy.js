@@ -2,7 +2,7 @@ var triggy = {
 	load: function() {
 		/* form */
 		$('#create').submit(function(e){
-			e.preventDefault();			
+			e.preventDefault();
 			$('#url').attr('disabled','disabled');
 			$('#submit').hide().after('<div id="spinner"></div>');
 			$.ajax('/api/create',{
@@ -17,7 +17,7 @@ var triggy = {
 						$('#submit').show();
 						alert(data.error);
 					} else {
-						$('#action').html('<div class="show"><p>'+data.message+'</p><div id="triggy-link"><a href="'+data.shorturl+'">'+data.shorturl+'</a></div></div>');						
+						$('#action').html('<div class="show"><p>'+data.message+'</p><div id="triggy-link"><a href="'+data.shorturl+'">'+data.shorturl+'</a></div></div>');
 					}
 				}
 			});
