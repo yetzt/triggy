@@ -1,6 +1,6 @@
 # Triggy
 
-Triggy is a short link service which does not simply 301-redirect but shows 
+Triggy is a short link service which does not simply 301-redirect but shows
 a trigger warning for shortened URLs. See 
 
   <http://tr.gy>
