@@ -1,4 +1,3 @@
-
 var express = require("express");
 var exval = require("express-validator");
 var i18n = require("i18n");
@@ -15,8 +14,8 @@ process.on('uncaughtException', function (err) {
 
 /* add some locales for i18n fun */
 i18n.configure({
-    locales:['en', 'de'],
-    register: global
+	locales:['en', 'de'],
+	register: global
 });
 
 /* create a server with express */
@@ -61,7 +60,6 @@ app.get(/^\/([\_A-Za-z0-9]{5})$/, function(req, res){
 
 /* json interface for short link creation */
 app.post('/api/create', function(req, res){
-	
 	var errors = [];
 	req.onValidationError(function(msg) {
 		errors.push(msg);
@@ -77,25 +75,23 @@ app.post('/api/create', function(req, res){
 	var warning = req.body.warning;
 	
 	if (errors.length > 0) {
-	   res.json({
+		res.json({
 			error: errors.shift()
-		});	
-	} else {		
+		});
+	} else {
 		triggy.create(url, action, warning, function(data){
 			data.shorturl = prefix+data.link;
 			data.adress = __('Adress');
 			data.message = __('Your triggified link has been created:');
-		   res.json(data);				
-		});		
+			res.json(data);
+		});
 	}
 
 	return;
-
 });
 
 /* html interface for short link creation, for those without javascript */
 app.post('/create', function(req, res){
-
 	var errors = [];
 	req.onValidationError(function(msg) {
 		errors.push(msg);
@@ -113,15 +109,14 @@ app.post('/create', function(req, res){
 	
 	if (errors.length > 0) {
 		res.render('create-error', errors);
-	} else {		
+	} else {
 		triggy.create(url, action, warning, function(data){
 			data.shorturl = prefix+data.link;
 			res.render('create', data);
-		});		
+		});
 	}
 
 	return;
-
 });
 
 /* just redirect anything else to the default page */

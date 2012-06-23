@@ -1,19 +1,17 @@
 @font-face {
-	font-family: 'Londrina Sketch';	
-	src: url('../fonts/LondrinaSketche-Regular-webfont.eot');	
-	src: url('../fonts/LondrinaSketche-Regular-webfont.eot?#iefix') format('embedded-opentype'),	
-		url('../fonts/LondrinaSketche-Regular-webfont.woff') format('woff'),	
-		url('../fonts/LondrinaSketche-Regular-webfont.ttf') format('truetype'),	
-		url('../fonts/LondrinaSketche-Regular-webfont.svg#LondrinaSketcheRegular') format('svg');	
+	font-family: 'Londrina Sketch';
+	src: url('../fonts/LondrinaSketche-Regular-webfont.eot');
+	src: url('../fonts/LondrinaSketche-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/LondrinaSketche-Regular-webfont.woff') format('woff'),
+		url('../fonts/LondrinaSketche-Regular-webfont.ttf') format('truetype'),
+		url('../fonts/LondrinaSketche-Regular-webfont.svg#LondrinaSketcheRegular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 html {
-	
 	margin: 0px;
 	padding: 0px;
-	
 }
 	
 body {
@@ -23,7 +21,7 @@ body {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	line-height: 1.6em;
 	background-color: #006cc7;
-	background: url(../images/triggy-background.png) bottom right no-repeat fixed, -moz-radial-gradient(center center 0deg, circle cover, #0077db, #006cc7, #0057a0);	
+	background: url(../images/triggy-background.png) bottom right no-repeat fixed, -moz-radial-gradient(center center 0deg, circle cover, #0077db, #006cc7, #0057a0);
 		
 }
 
@@ -44,7 +42,7 @@ body {
 		height: 200px;
 		text-align: left;
 				
-	} 
+	}
 	
 		#head h1 {
 		
@@ -57,7 +55,7 @@ body {
 			color: #fff;
 			font-size: 5em;
 			font-family: "Londrina Sketch", "Fredericka the Great", sans-serif;
-			font-weight: normal;			
+			font-weight: normal;
 			background: url(../images/triggy.png) top left no-repeat;
 			
 		}
@@ -200,10 +198,8 @@ body {
 				}
 				
 					#action .show #triggy-link a {
-					
 						text-decoration: none;
-						color: #333;
-						
+						color: #333;						
 					}					
 	
 	#warning-text {
@@ -214,37 +210,30 @@ body {
 		margin: 0 150px 20px 0;
 		float: right;
 	}
-		
+
 	#content-container {
-		
 		display: block;
 		position: relative;
 		width: 100%;
 		padding: 30px 0px;
 		margin: 0px auto;
-		
 	}
 
 		#content {
-			
 			display: block;
 			position: relative;
 			width: 800px;
 			margin: 0px auto;
-			
 		}
 		
 			#content .col {
-				
 				width: 400px;
 				padding: 0px;
 				margin: 0px;
 				float: left;
-				
 			}
 		
 			#content article {
-				
 				padding: 20px;
 				margin: 10px 10px 20px;
 				background-color: rgba(255,255,255,0.1);
@@ -252,17 +241,14 @@ body {
 				-webkit-border-radius: 7px;
 				-moz-border-radius: 7px;
 				border-radius: 7px;
-								
 			}
 							
 				#content article h2 {
-					
 					color: #fff;
 					margin: 0px 0px 10px;
 					padding: 0px;
-					font-size: 1.3em;	
-					text-shadow: 1px 1px 2px rgba(0,0,0,0.4);				
-					
+					font-size: 1.3em;
+					text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
 				}
 				
 				#content article p,
@@ -331,7 +317,7 @@ body {
 		border-top-left-radius: 7px;
 		border-top-right-radius: 7px;
 				
-	}	
+	}
 	
 		#foot #footer-links,
 		#foot #footer-flattr,
@@ -341,7 +327,7 @@ body {
 			position: relative;
 			float: left;
 			height: 30px;
-			line-height: 30px;						
+			line-height: 30px;
 			
 		}
 		
@@ -403,11 +389,11 @@ body {
 	#action #url {
 		width: 500px;
 	}
-}	
+}
 
 @media screen and (min-device-width : 320px) and (max-device-width: 480px) {
 	#head {
-		height: 72px;		
+		height: 72px;
 	}
 	#head h1 {
 		display: block;
@@ -419,7 +405,7 @@ body {
 		color: #fff;
 		font-size: 3em;
 		font-family: "Londrina Sketch", "Fredericka the Great", sans-serif;
-		font-weight: normal;			
+		font-weight: normal;
 		background: url(../images/apple-touch-icon-72x72.png) top left no-repeat;
 	}
 	#head, #action, #foot, #content {
@@ -440,11 +426,11 @@ body {
 	#content {
 		font-size: 12px;
 	}
-}	
+}
 			
 @media screen and (max-device-width: 320px) {
 	#head {
-		height: 72px;		
+		height: 72px;
 	}
 	#head h1 {
 		display: block;
@@ -456,7 +442,7 @@ body {
 		color: #fff;
 		font-size: 3em;
 		font-family: "Londrina Sketch", "Fredericka the Great", sans-serif;
-		font-weight: normal;			
+		font-weight: normal;
 		background: url(../images/apple-touch-icon-72x72.png) top left no-repeat;
 	}
 	#head, #action, #content {
@@ -490,7 +476,7 @@ body {
 	#content {
 		font-size: 11px;
 	}
-}	
+}
 						
 ::-moz-selection { background: #39678e; color: #fff; text-shadow: none; }
 ::selection { background: #39678e; color: #fff; text-shadow: none; }
@@ -498,175 +484,175 @@ body {
 /* skeleton base */
 
 a.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
-    -moz-border-bottom-colors: none;
-    -moz-border-image: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0 0 #99ff00;
-    border-color: #CCCCCC #AAAAAA #AAAAAA #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
-    border-right: 1px solid #AAAAAA;
-    border-style: solid;
-    border-width: 1px;
-    color: #444444;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 21px;
-    margin-bottom: 20px;
-    padding: 4px 12px;
-    text-decoration: none;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%) repeat scroll 0 0 #99ff00;
+	border-color: #CCCCCC #AAAAAA #AAAAAA #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	border-right: 1px solid #AAAAAA;
+	border-style: solid;
+	border-width: 1px;
+	color: #444444;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 21px;
+	margin-bottom: 20px;
+	padding: 4px 12px;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.75);
 }
 
 a.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-    -moz-border-bottom-colors: none;
-    -moz-border-image: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%) repeat scroll 0 0 #99ff00;
-    border-color: #AAAAAA #888888 #888888 #AAAAAA;
-    border-right: 1px solid #888888;
-    border-style: solid;
-    border-width: 1px;
-    color: #222222;
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%) repeat scroll 0 0 #99ff00;
+	border-color: #AAAAAA #888888 #888888 #AAAAAA;
+	border-right: 1px solid #888888;
+	border-style: solid;
+	border-width: 1px;
+	color: #222222;
 }
 
 a.button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
-    background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%) repeat scroll 0 0 #99ff00;
-    border: 1px solid #666666;
+	background: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%) repeat scroll 0 0 #99ff00;
+	border: 1px solid #666666;
 }
 
 .button.full-width, button.full-width, input.full-width[type="submit"], input.full-width[type="reset"], input.full-width[type="button"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    text-align: center;
-    width: 100%;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+	width: 100%;
 }
 
 ul.tabs {
-    border-bottom: 1px solid #DDDDDD;
-    display: block;
-    margin: 0 0 20px;
-    padding: 0;
+	border-bottom: 1px solid #DDDDDD;
+	display: block;
+	margin: 0 0 20px;
+	padding: 0;
 }
 
 ul.tabs li {
-    display: block;
-    float: left;
-    height: 30px;
-    margin-bottom: 0;
-    padding: 0;
-    width: auto;
+	display: block;
+	float: left;
+	height: 30px;
+	margin-bottom: 0;
+	padding: 0;
+	width: auto;
 }
 
 ul.tabs li a {
-    -moz-border-bottom-colors: none;
-    -moz-border-image: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: none repeat scroll 0 0 #F5F5F5;
-    border-color: #DDDDDD;
-    border-style: solid;
-    border-width: 1px 1px 0 0;
-    display: block;
-    font-size: 13px;
-    height: 29px;
-    line-height: 30px;
-    margin: 0;
-    padding: 0 20px;
-    text-decoration: none;
-    width: auto;
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: none repeat scroll 0 0 #F5F5F5;
+	border-color: #DDDDDD;
+	border-style: solid;
+	border-width: 1px 1px 0 0;
+	display: block;
+	font-size: 13px;
+	height: 29px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 20px;
+	text-decoration: none;
+	width: auto;
 }
 
 ul.tabs li a.active {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-left-width: 1px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    color: #111111;
-    height: 30px;
-    margin: 0 0 0 -1px;
-    padding-top: 4px;
-    position: relative;
-    top: -4px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-left-width: 1px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	color: #111111;
+	height: 30px;
+	margin: 0 0 0 -1px;
+	padding-top: 4px;
+	position: relative;
+	top: -4px;
 }
 
 ul.tabs li:first-child a.active {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 ul.tabs li:first-child a {
-    border-top-left-radius: 2px;
-    border-width: 1px 1px 0;
+	border-top-left-radius: 2px;
+	border-width: 1px 1px 0;
 }
 
 ul.tabs li:last-child a {
-    border-top-right-radius: 2px;
+	border-top-right-radius: 2px;
 }
 
 ul.tabs-content {
-    display: block;
-    margin: 0;
+	display: block;
+	margin: 0;
 }
 
 ul.tabs-content > li {
-    display: none;
+	display: none;
 }
 
 ul.tabs-content > li.active {
-    display: block;
+	display: block;
 }
 
 ul.tabs:before, ul.tabs:after {
-    content: " ";
-    display: block;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
+	content: " ";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
 }
 
 ul.tabs:after {
-    clear: both;
+	clear: both;
 }
 
 ul.tabs {
 }
 
 fieldset {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px 2px 2px 2px;
-    color: #777777;
-    font: 13px "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin: 5px 0 20px;
-    max-width: 100%;
-    outline: medium none;
-    padding: 6px 4px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px 2px 2px 2px;
+	color: #777777;
+	font: 13px "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 5px 0 20px;
+	max-width: 100%;
+	outline: medium none;
+	padding: 6px 4px;
 }
 
 select {
-    padding: 0;
+	padding: 0;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
-    border: 1px solid #AAAAAA;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    color: #444444;
+	border: 1px solid #AAAAAA;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	color: #444444;
 }
 
 textarea {
-    min-height: 60px;
+	min-height: 60px;
 }
 
 label, legend {
@@ -679,13 +665,20 @@ select {
 }
 
 input[type="checkbox"] {
-    display: inline;
+	display: inline;
 }
 
 label span, legend span {
-    color: #444444;
-    font-size: 13px;
-    font-weight: normal;
+	color: #444444;
+	font-size: 13px;
+	font-weight: normal;
 }
 
-.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.clear{
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0;
+}

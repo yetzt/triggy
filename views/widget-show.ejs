@@ -1,12 +1,12 @@
 <div class="show">
-   <p>
-      <%= __('Your triggified link has been created:') %>
-   </p>
+	<p>
+		<%= __('Your triggified link has been created:') %>
+	</p>
 	<div id="triggy-link">
-	<% if(warning.length > 0) { %>
-		<%= action %> <%= warning %>.
-		<br>
-	<% } %>
-	   <a href="<%= shorturl %>"><%= shorturl %></a>
+		<% if(warning.length > 0) { %>
+			<%= action %> <%= warning %>.
+			<br>
+		<% } %>
+		<a href="<%= shorturl %>"><%= shorturl %></a>
 	</div>
 </div>

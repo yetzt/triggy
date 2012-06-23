@@ -2,7 +2,7 @@ var triggy = {
 	load: function() {
 		/* form */
 		$('#create').submit(function(e){
-			e.preventDefault();			
+			e.preventDefault();
 			$('#url').attr('disabled','disabled');
 			$('#submit').hide().after('<div id="spinner"></div>');
 			$.ajax('/api/create',{
