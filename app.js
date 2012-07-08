@@ -47,9 +47,11 @@ app.get(/^\/([\_A-Za-z0-9]{5})$/, function(req, res){
 		if (result === null) {
 			res.redirect('/', 301);
 		} else {
+			/* if the short url has no action set it to null (required for ejs-rendering) */
 			if (!result.action) {
 				result.action = null;
 			}
+			/* if the short url has no warning set it to null (required for ejs-rendering) */
 			if (!result.warning) {
 				result.warning = null;
 			}
@@ -81,6 +83,7 @@ app.post('/api/create', function(req, res){
 	} else {
 		triggy.create(url, action, warning, function(data){
 			data.shorturl = prefix+data.link;
+			/* we need this for i18n */
 			data.adress = __('Adress');
 			data.message = __('Your triggified link has been created:');
 			res.json(data);
