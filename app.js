@@ -4,13 +4,9 @@ var i18n = require("i18n");
 var ejs = require("ejs");
 var crypto = require("crypto");
 var triggy = require("./lib/triggy");
+var bodyparser = require("body-parser");
 
 var prefix = 'http://tr.gy/';
-
-process.on('uncaughtException', function (err) {
-	/* nodejs version of "on error resume next" */
-	console.log('Caught exception: ' + err);
-});
 
 /* add some locales for i18n fun */
 i18n.configure({
@@ -19,22 +15,18 @@ i18n.configure({
 });
 
 /* create a server with express */
-var app = express.createServer();
+var app = express();
 
-app.configure(function() {
-	/* we use embedded js as kind of template engine */
-	app.set('view engine', 'ejs');
-	/* since we get posted we want a bodyParser() */
-	app.use(express.bodyParser());
-	/* express-validator makes your input handling safety way easier */
-	app.use(exval);
-	/* can we haz i18n? */
-	app.use(i18n.init);
-	/* just serve the assets till we find out how to handle that stuff with nginx */
-	app.use(express.static(__dirname+'/assets'));
-	/* we use router to server differen paths */
-	app.use(app.router);
-});
+/* we use embedded js as kind of template engine */
+app.set('view engine', 'ejs');
+/* since we get posted we want a bodyParser() */
+app.use(bodyparser.urlencoded({ extended: false }));
+/* express-validator makes your input handling safety way easier */
+app.use(exval);
+/* can we haz i18n? */
+app.use(i18n.init);
+/* just serve the assets till we find out how to handle that stuff with nginx */
+app.use(express.static(__dirname+'/assets'));
 
 /* serve the index document when nothing special is requested */
 app.get('/', function(req, res){

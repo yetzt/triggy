@@ -1,20 +1,21 @@
 {
+	"private": "true",
 	"name": "triggy",
 	"description": "responsible link-shortening",
 	"author": "yetzt",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "code: public domain, artwork: cc-by-nc",
-	
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/yetzt/triggy.git"
 	},
 	"dependencies": {
-		"express": "2.5.x",
-		"express-validator": "0.2.x",
-		"i18n": "0.3.x",
-		"ejs": "0.7.x",
+		"body-parser": "^1.18.3",
 		"crypto": "0.0.x",
+		"ejs": "0.7.x",
+		"express": "^4.16.3",
+		"express-validator": "^5.3.0",
+		"i18n": "0.3.x",
 		"redis": "0.7.x"
 	},
 	"scripts": {
