@@ -22,5 +22,17 @@
 	"Educate and sensibilize others about triggers": "Unterrichte und sensibilisiere andere über Trigger",
 	"Help us translate triggy into ALL the languages": "Hilf uns, triggy in ALLE Sprachen zu übersetzen",
 	"The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue. ": "Die Webseite die Du aufrufen möchtest, kann möglicherweise traumatische Erinnerungen auslösen. Wenn das kein Problem für Dich ist, dann fahre fort.",
-	"Triggy does not make logs or collect any data but the URLs you submit.": "Triggy speichert keine Logdateien und sammelt keine Daten außer den URLs, die verkürzt werden."
+	"Triggy does not make logs or collect any data but the URLs you submit.": "Triggy speichert keine Logdateien und sammelt keine Daten außer den URLs, die verkürzt werden.",
+	"Contains": "Enthält",
+	"Depicts": "Zeigt",
+	"Describes": "Beschreibt",
+	"Mentions": "Erwähnt",
+	"Specify a warning...": "Gib eine Warnung an...",
+	"What could possibly trigger someone?": "What could possibly trigger someone?",
+	"The website you are about to view may contain content which can trigger traumatic memories. If you are fine with that, you may continue.": "Die Webseite die Du aufrufen möchtest kann möglicherweise traumatische Erinnerungen auslösen. Wenn das kein Problem für Dich ist, dann fahre fort.",
+	"The adress is %s.": "Die Adresse lautet %s.",
+	"Show specific information": "Zeige genauere Informationen",
+	"The adress is: %s.": "Die Adresse lautet: %s.",
+	"Adress": "Adresse",
+	"The adress is: %s": "Die Adresse lautet: %s"
 }

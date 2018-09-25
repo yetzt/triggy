@@ -7,7 +7,11 @@ var triggy = {
 			$('#submit').hide().after('<div id="spinner"></div>');
 			$.ajax('/api/create',{
 				cache: false,
-				data: {url: $('#url').val()},
+				data: {
+					url: $('#url').val(),
+					action: $('#warning-action').val(),
+					warning: $('#warning-text').val()
+				},
 				type: 'POST',
 				dataType: 'json',
 				success: function(data, status, xhr) {
@@ -17,7 +21,11 @@ var triggy = {
 						$('#submit').show();
 						alert(data.error);
 					} else {
-						$('#action').html('<div class="show"><p>'+data.message+'</p><div id="triggy-link"><a href="'+data.shorturl+'">'+data.shorturl+'</a></div></div>');
+						if (data.warning.length < 0) {
+							$('#action').html('<div class="show"><p>'+data.message+'</p><div id="triggy-link">'+data.adress+': <a href="'+data.shorturl+'">'+data.shorturl+'</a></div></div>');
+						} else {
+							$('#action').html('<div class="show"><p>'+data.message+'</p><div id="triggy-link">'+data.action+' '+data.warning+'.<br>'+data.adress+': <a href="'+data.shorturl+'">'+data.shorturl+'</a></div></div>');
+						}
 					}
 				}
 			});

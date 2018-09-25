@@ -3,5 +3,14 @@
 		<span><%= __('The URL you want to shorten') %></span>
 	</label>
 	<input type="text" value="" name="url" id="url" placeholder="<%= __('Type or paste your URL here...') %>" />
+	<div class="warning">
+		<select name="warning-action" id="warning-action">
+			<option><%= __('Contains') %></option>
+			<option><%= __('Depicts') %></option>
+			<option><%= __('Describes') %></option>
+			<option><%= __('Mentions') %></option>
+		</select>
+		<input type="text" name="warning-text" id="warning-text" placeholder="<%= __('Specify a warning...') %>" />
+	</div>
 	<input type="submit" id="submit" value="<%= __('Triggify') %>" />
 </form>
